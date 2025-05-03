@@ -1,12 +1,12 @@
 import express from 'express';
 import { authMiddleware, checkAdmin } from '../middleware/auth.middleware.js';
-import { createProblem, deleteProblem, getAllproblems, getAllProblemSolvedByUser, getProblemById, updateProblem } from '../controllers/problem.contoller.js';
+import { createProblem, deleteProblem, getAllproblems, getAllProblemSolvedByUser, getProblemById, updateProblem } from '../controllers/problem.controller.js';
 
 const problemRoutes = express.Router();
 
 problemRoutes.post("/create-problem", authMiddleware, checkAdmin, createProblem);
 
-problemRoutes.get("/get-allproblems", authMiddleware, getAllproblems);
+problemRoutes.get("/get-all-problems", authMiddleware, getAllproblems);
 
 problemRoutes.get("/get-problem/:id", authMiddleware, getProblemById);
 
