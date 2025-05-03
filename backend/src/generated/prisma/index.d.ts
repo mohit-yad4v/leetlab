@@ -4995,17 +4995,17 @@ export namespace Prisma {
   }
 
   export type TestCaseResultAvgAggregateOutputType = {
-    testCases: number | null
+    testCase: number | null
   }
 
   export type TestCaseResultSumAggregateOutputType = {
-    testCases: number | null
+    testCase: number | null
   }
 
   export type TestCaseResultMinAggregateOutputType = {
     id: string | null
     submissionId: string | null
-    testCases: number | null
+    testCase: number | null
     passed: boolean | null
     stdout: string | null
     expected: string | null
@@ -5021,7 +5021,7 @@ export namespace Prisma {
   export type TestCaseResultMaxAggregateOutputType = {
     id: string | null
     submissionId: string | null
-    testCases: number | null
+    testCase: number | null
     passed: boolean | null
     stdout: string | null
     expected: string | null
@@ -5037,7 +5037,7 @@ export namespace Prisma {
   export type TestCaseResultCountAggregateOutputType = {
     id: number
     submissionId: number
-    testCases: number
+    testCase: number
     passed: number
     stdout: number
     expected: number
@@ -5053,17 +5053,17 @@ export namespace Prisma {
 
 
   export type TestCaseResultAvgAggregateInputType = {
-    testCases?: true
+    testCase?: true
   }
 
   export type TestCaseResultSumAggregateInputType = {
-    testCases?: true
+    testCase?: true
   }
 
   export type TestCaseResultMinAggregateInputType = {
     id?: true
     submissionId?: true
-    testCases?: true
+    testCase?: true
     passed?: true
     stdout?: true
     expected?: true
@@ -5079,7 +5079,7 @@ export namespace Prisma {
   export type TestCaseResultMaxAggregateInputType = {
     id?: true
     submissionId?: true
-    testCases?: true
+    testCase?: true
     passed?: true
     stdout?: true
     expected?: true
@@ -5095,7 +5095,7 @@ export namespace Prisma {
   export type TestCaseResultCountAggregateInputType = {
     id?: true
     submissionId?: true
-    testCases?: true
+    testCase?: true
     passed?: true
     stdout?: true
     expected?: true
@@ -5198,7 +5198,7 @@ export namespace Prisma {
   export type TestCaseResultGroupByOutputType = {
     id: string
     submissionId: string
-    testCases: number
+    testCase: number
     passed: boolean
     stdout: string | null
     expected: string
@@ -5233,7 +5233,7 @@ export namespace Prisma {
   export type TestCaseResultSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     submissionId?: boolean
-    testCases?: boolean
+    testCase?: boolean
     passed?: boolean
     stdout?: boolean
     expected?: boolean
@@ -5250,7 +5250,7 @@ export namespace Prisma {
   export type TestCaseResultSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     submissionId?: boolean
-    testCases?: boolean
+    testCase?: boolean
     passed?: boolean
     stdout?: boolean
     expected?: boolean
@@ -5267,7 +5267,7 @@ export namespace Prisma {
   export type TestCaseResultSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     submissionId?: boolean
-    testCases?: boolean
+    testCase?: boolean
     passed?: boolean
     stdout?: boolean
     expected?: boolean
@@ -5284,7 +5284,7 @@ export namespace Prisma {
   export type TestCaseResultSelectScalar = {
     id?: boolean
     submissionId?: boolean
-    testCases?: boolean
+    testCase?: boolean
     passed?: boolean
     stdout?: boolean
     expected?: boolean
@@ -5297,7 +5297,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }
 
-  export type TestCaseResultOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "submissionId" | "testCases" | "passed" | "stdout" | "expected" | "stderr" | "compileOutput" | "status" | "memory" | "time" | "createdAt" | "updatedAt", ExtArgs["result"]["testCaseResult"]>
+  export type TestCaseResultOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "submissionId" | "testCase" | "passed" | "stdout" | "expected" | "stderr" | "compileOutput" | "status" | "memory" | "time" | "createdAt" | "updatedAt", ExtArgs["result"]["testCaseResult"]>
   export type TestCaseResultInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     submission?: boolean | SubmissionDefaultArgs<ExtArgs>
   }
@@ -5316,7 +5316,7 @@ export namespace Prisma {
     scalars: $Extensions.GetPayloadResult<{
       id: string
       submissionId: string
-      testCases: number
+      testCase: number
       passed: boolean
       stdout: string | null
       expected: string
@@ -5753,7 +5753,7 @@ export namespace Prisma {
   interface TestCaseResultFieldRefs {
     readonly id: FieldRef<"TestCaseResult", 'String'>
     readonly submissionId: FieldRef<"TestCaseResult", 'String'>
-    readonly testCases: FieldRef<"TestCaseResult", 'Int'>
+    readonly testCase: FieldRef<"TestCaseResult", 'Int'>
     readonly passed: FieldRef<"TestCaseResult", 'Boolean'>
     readonly stdout: FieldRef<"TestCaseResult", 'String'>
     readonly expected: FieldRef<"TestCaseResult", 'String'>
@@ -7316,7 +7316,7 @@ export namespace Prisma {
   export const TestCaseResultScalarFieldEnum: {
     id: 'id',
     submissionId: 'submissionId',
-    testCases: 'testCases',
+    testCase: 'testCase',
     passed: 'passed',
     stdout: 'stdout',
     expected: 'expected',
@@ -7795,7 +7795,7 @@ export namespace Prisma {
     NOT?: TestCaseResultWhereInput | TestCaseResultWhereInput[]
     id?: StringFilter<"TestCaseResult"> | string
     submissionId?: StringFilter<"TestCaseResult"> | string
-    testCases?: IntFilter<"TestCaseResult"> | number
+    testCase?: IntFilter<"TestCaseResult"> | number
     passed?: BoolFilter<"TestCaseResult"> | boolean
     stdout?: StringNullableFilter<"TestCaseResult"> | string | null
     expected?: StringFilter<"TestCaseResult"> | string
@@ -7812,7 +7812,7 @@ export namespace Prisma {
   export type TestCaseResultOrderByWithRelationInput = {
     id?: SortOrder
     submissionId?: SortOrder
-    testCases?: SortOrder
+    testCase?: SortOrder
     passed?: SortOrder
     stdout?: SortOrderInput | SortOrder
     expected?: SortOrder
@@ -7832,7 +7832,7 @@ export namespace Prisma {
     OR?: TestCaseResultWhereInput[]
     NOT?: TestCaseResultWhereInput | TestCaseResultWhereInput[]
     submissionId?: StringFilter<"TestCaseResult"> | string
-    testCases?: IntFilter<"TestCaseResult"> | number
+    testCase?: IntFilter<"TestCaseResult"> | number
     passed?: BoolFilter<"TestCaseResult"> | boolean
     stdout?: StringNullableFilter<"TestCaseResult"> | string | null
     expected?: StringFilter<"TestCaseResult"> | string
@@ -7849,7 +7849,7 @@ export namespace Prisma {
   export type TestCaseResultOrderByWithAggregationInput = {
     id?: SortOrder
     submissionId?: SortOrder
-    testCases?: SortOrder
+    testCase?: SortOrder
     passed?: SortOrder
     stdout?: SortOrderInput | SortOrder
     expected?: SortOrder
@@ -7873,7 +7873,7 @@ export namespace Prisma {
     NOT?: TestCaseResultScalarWhereWithAggregatesInput | TestCaseResultScalarWhereWithAggregatesInput[]
     id?: StringWithAggregatesFilter<"TestCaseResult"> | string
     submissionId?: StringWithAggregatesFilter<"TestCaseResult"> | string
-    testCases?: IntWithAggregatesFilter<"TestCaseResult"> | number
+    testCase?: IntWithAggregatesFilter<"TestCaseResult"> | number
     passed?: BoolWithAggregatesFilter<"TestCaseResult"> | boolean
     stdout?: StringNullableWithAggregatesFilter<"TestCaseResult"> | string | null
     expected?: StringWithAggregatesFilter<"TestCaseResult"> | string
@@ -8290,7 +8290,7 @@ export namespace Prisma {
 
   export type TestCaseResultCreateInput = {
     id?: string
-    testCases: number
+    testCase: number
     passed: boolean
     stdout?: string | null
     expected: string
@@ -8307,7 +8307,7 @@ export namespace Prisma {
   export type TestCaseResultUncheckedCreateInput = {
     id?: string
     submissionId: string
-    testCases: number
+    testCase: number
     passed: boolean
     stdout?: string | null
     expected: string
@@ -8322,7 +8322,7 @@ export namespace Prisma {
 
   export type TestCaseResultUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
-    testCases?: IntFieldUpdateOperationsInput | number
+    testCase?: IntFieldUpdateOperationsInput | number
     passed?: BoolFieldUpdateOperationsInput | boolean
     stdout?: NullableStringFieldUpdateOperationsInput | string | null
     expected?: StringFieldUpdateOperationsInput | string
@@ -8339,7 +8339,7 @@ export namespace Prisma {
   export type TestCaseResultUncheckedUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     submissionId?: StringFieldUpdateOperationsInput | string
-    testCases?: IntFieldUpdateOperationsInput | number
+    testCase?: IntFieldUpdateOperationsInput | number
     passed?: BoolFieldUpdateOperationsInput | boolean
     stdout?: NullableStringFieldUpdateOperationsInput | string | null
     expected?: StringFieldUpdateOperationsInput | string
@@ -8355,7 +8355,7 @@ export namespace Prisma {
   export type TestCaseResultCreateManyInput = {
     id?: string
     submissionId: string
-    testCases: number
+    testCase: number
     passed: boolean
     stdout?: string | null
     expected: string
@@ -8370,7 +8370,7 @@ export namespace Prisma {
 
   export type TestCaseResultUpdateManyMutationInput = {
     id?: StringFieldUpdateOperationsInput | string
-    testCases?: IntFieldUpdateOperationsInput | number
+    testCase?: IntFieldUpdateOperationsInput | number
     passed?: BoolFieldUpdateOperationsInput | boolean
     stdout?: NullableStringFieldUpdateOperationsInput | string | null
     expected?: StringFieldUpdateOperationsInput | string
@@ -8386,7 +8386,7 @@ export namespace Prisma {
   export type TestCaseResultUncheckedUpdateManyInput = {
     id?: StringFieldUpdateOperationsInput | string
     submissionId?: StringFieldUpdateOperationsInput | string
-    testCases?: IntFieldUpdateOperationsInput | number
+    testCase?: IntFieldUpdateOperationsInput | number
     passed?: BoolFieldUpdateOperationsInput | boolean
     stdout?: NullableStringFieldUpdateOperationsInput | string | null
     expected?: StringFieldUpdateOperationsInput | string
@@ -8840,7 +8840,7 @@ export namespace Prisma {
   export type TestCaseResultCountOrderByAggregateInput = {
     id?: SortOrder
     submissionId?: SortOrder
-    testCases?: SortOrder
+    testCase?: SortOrder
     passed?: SortOrder
     stdout?: SortOrder
     expected?: SortOrder
@@ -8854,13 +8854,13 @@ export namespace Prisma {
   }
 
   export type TestCaseResultAvgOrderByAggregateInput = {
-    testCases?: SortOrder
+    testCase?: SortOrder
   }
 
   export type TestCaseResultMaxOrderByAggregateInput = {
     id?: SortOrder
     submissionId?: SortOrder
-    testCases?: SortOrder
+    testCase?: SortOrder
     passed?: SortOrder
     stdout?: SortOrder
     expected?: SortOrder
@@ -8876,7 +8876,7 @@ export namespace Prisma {
   export type TestCaseResultMinOrderByAggregateInput = {
     id?: SortOrder
     submissionId?: SortOrder
-    testCases?: SortOrder
+    testCase?: SortOrder
     passed?: SortOrder
     stdout?: SortOrder
     expected?: SortOrder
@@ -8890,7 +8890,7 @@ export namespace Prisma {
   }
 
   export type TestCaseResultSumOrderByAggregateInput = {
-    testCases?: SortOrder
+    testCase?: SortOrder
   }
 
   export type IntWithAggregatesFilter<$PrismaModel = never> = {
@@ -9989,7 +9989,7 @@ export namespace Prisma {
 
   export type TestCaseResultCreateWithoutSubmissionInput = {
     id?: string
-    testCases: number
+    testCase: number
     passed: boolean
     stdout?: string | null
     expected: string
@@ -10004,7 +10004,7 @@ export namespace Prisma {
 
   export type TestCaseResultUncheckedCreateWithoutSubmissionInput = {
     id?: string
-    testCases: number
+    testCase: number
     passed: boolean
     stdout?: string | null
     expected: string
@@ -10135,7 +10135,7 @@ export namespace Prisma {
     NOT?: TestCaseResultScalarWhereInput | TestCaseResultScalarWhereInput[]
     id?: StringFilter<"TestCaseResult"> | string
     submissionId?: StringFilter<"TestCaseResult"> | string
-    testCases?: IntFilter<"TestCaseResult"> | number
+    testCase?: IntFilter<"TestCaseResult"> | number
     passed?: BoolFilter<"TestCaseResult"> | boolean
     stdout?: StringNullableFilter<"TestCaseResult"> | string | null
     expected?: StringFilter<"TestCaseResult"> | string
@@ -10654,7 +10654,7 @@ export namespace Prisma {
 
   export type TestCaseResultCreateManySubmissionInput = {
     id?: string
-    testCases: number
+    testCase: number
     passed: boolean
     stdout?: string | null
     expected: string
@@ -10669,7 +10669,7 @@ export namespace Prisma {
 
   export type TestCaseResultUpdateWithoutSubmissionInput = {
     id?: StringFieldUpdateOperationsInput | string
-    testCases?: IntFieldUpdateOperationsInput | number
+    testCase?: IntFieldUpdateOperationsInput | number
     passed?: BoolFieldUpdateOperationsInput | boolean
     stdout?: NullableStringFieldUpdateOperationsInput | string | null
     expected?: StringFieldUpdateOperationsInput | string
@@ -10684,7 +10684,7 @@ export namespace Prisma {
 
   export type TestCaseResultUncheckedUpdateWithoutSubmissionInput = {
     id?: StringFieldUpdateOperationsInput | string
-    testCases?: IntFieldUpdateOperationsInput | number
+    testCase?: IntFieldUpdateOperationsInput | number
     passed?: BoolFieldUpdateOperationsInput | boolean
     stdout?: NullableStringFieldUpdateOperationsInput | string | null
     expected?: StringFieldUpdateOperationsInput | string
@@ -10699,7 +10699,7 @@ export namespace Prisma {
 
   export type TestCaseResultUncheckedUpdateManyWithoutSubmissionInput = {
     id?: StringFieldUpdateOperationsInput | string
-    testCases?: IntFieldUpdateOperationsInput | number
+    testCase?: IntFieldUpdateOperationsInput | number
     passed?: BoolFieldUpdateOperationsInput | boolean
     stdout?: NullableStringFieldUpdateOperationsInput | string | null
     expected?: StringFieldUpdateOperationsInput | string
